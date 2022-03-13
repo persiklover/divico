@@ -1,0 +1,49 @@
+@import "mixins"
+@import "grid"
+@import "vars"
+@import "fonts"
+
+/* normalize.css */
+@import "../lib/normalize/_normalize"
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+button,
+input,
+a
+  &:focus
+    outline: none
+    // box-shadow: 0 0 1px 1px #5e9ed6
+
+a
+  display: inline-flex
+  color: inherit
+  text-decoration: none
+
+.visually-hidden
+  position: absolute
+  clip: rect(0 0 0 0)
+  width:  1px
+  height: 1px
+  margin: -1px
+  overflow: hidden
+
+html
+  font-size: 10px
+
+body
+  min-width: 320px
+  overflow-x: hidden
+  background-color: #191f25
+
+  font-family: 'Stolzl', sans-serif
+  color: white
+  font-weight: normal
+  font-size: 1.8rem
+
+  &.scroll-disabled
+    height: 100vh
+    overflow-y: hidden

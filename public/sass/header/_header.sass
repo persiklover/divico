@@ -1,0 +1,44 @@
+@import 'menu'
+@import 'menu-btn'
+
+.header
+  position: fixed
+  z-index: 6
+  left: 0
+  top:  0
+  width: 100%
+  background-color: #2f2f2f
+  padding: 1.3rem 0
+
+  +sm
+    padding: 1rem 0
+  
+  &__wrap
+    display: flex
+    align-items: center
+
+    +sm
+      justify-content: space-between
+  
+  &__logo
+    margin-right: 3.5rem
+    height: 2.6rem
+
+    +sm
+      margin-right: 0
+      height: 2rem
+
+  &__menu
+    margin-top: 0.4rem
+
+  &__btn
+    position: relative
+    z-index: 99
+    display: none
+
+    &.active
+      color: #face5b
+    
+    +sm
+      display: flex
+    

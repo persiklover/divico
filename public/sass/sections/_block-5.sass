@@ -1,0 +1,274 @@
+.block-5
+
+  @media (min-width: 1601px) and (max-width: 1921px)
+    padding-bottom: 13rem
+
+  +sm
+    padding-bottom: 7rem
+
+  &__wrap
+    position: relative
+    display: flex
+    flex-direction: column
+
+  &__footer
+    margin-top: 13rem
+
+    font-size: 3rem
+    font-weight: 500
+    line-height: 1.2
+
+    +xl
+      margin-top: 6rem
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    
+    +lg
+      font-size: 2.4rem
+    
+    +md
+      font-size: 1.6rem
+
+    +sm
+      align-items: center
+
+      font-size: 2.367rem
+      line-height: 1.533rem
+    
+    +xs
+      align-items: flex-start
+
+  &__btn
+    position: relative
+
+    display: block
+    margin: 0 auto
+    margin-top: 23.5rem
+    padding: 2.4rem 8rem
+
+    color: $crimson
+    font-size: 3.3rem
+    font-weight: 700
+    text-transform: uppercase
+
+    img
+      position: absolute
+      left:   50%
+      bottom: 100%
+      transform: translateX(-50%)
+
+      +sm
+        width: 13rem
+    
+    +xl
+      margin-top: 22rem
+    
+    +lg
+      padding-left:  6.2rem
+      padding-right: 6.2rem
+      margin-top: 20rem
+
+      font-size: 2.8rem
+    
+    +md
+      padding: 2rem 4rem
+
+      font-size: 2rem 
+       
+    +sm
+      margin-top: 14.5rem
+      padding: 1.4rem 3.5rem
+
+      font-size: 1.4rem
+
+.bonus
+  list-style: none
+  padding: 0
+  margin: 0
+  margin-top: 9rem
+  display: flex
+  justify-content: space-between
+
+  +xl
+    margin-top: 8.2rem
+  
+  +lg
+    margin-top: 6rem
+  
+  +md
+    margin-top: 4rem
+  
+  +sm
+    width: 100%
+    flex-direction: column
+    align-items: center
+
+  &-item
+    position: relative
+    width: (100% / 3) - 2.5%
+
+    color: white
+    font-size: 2.7rem
+    font-weight: 500
+    text-align: left
+    
+    +md
+      width: (100% / 3) - 4%
+      
+      font-size: 1.3rem
+    
+    +sm
+      margin-bottom: 3.5rem
+      width: 30rem
+
+      text-align: center
+
+      &:last-child
+        margin-bottom: 0
+
+    &__num
+      display: inline-block
+      margin-bottom: 6rem
+
+      font-size: 3rem
+      font-weight: 500
+
+      +xl
+        margin-bottom: 2rem
+
+      +lg
+        margin-bottom: 1rem
+      
+      +md
+        margin-bottom: 1.5rem
+
+        font-size: 2rem
+
+      +sm
+        margin-right: 2.5rem
+        margin-top: .3rem
+
+        font-size: 1.8rem
+        line-height: 2.361rem
+    
+    &__text
+      margin: 0
+
+      font-size: 3rem
+      font-weight: 400
+
+      +xl
+        font-size: 2.5rem
+        line-height: 1.4
+      
+      +lg
+        font-size: 1.9rem
+      
+      +md
+        font-size: 1.4rem
+        line-height: 1.4
+
+      +sm
+        font-size: 1.8rem
+        line-height: 2.361rem
+
+.offer
+  margin-top: 5.3rem
+
+  text-align: center
+
+  +xl
+    margin-top: 2rem
+
+  +md
+    margin-top: 1rem
+  
+  +sm
+    margin-top: 2.5rem
+
+    text-align: center
+  
+  &__title
+    display: inline-block
+    margin: 0
+    margin-bottom: 2.4rem
+
+    font-size: 2.2rem
+    font-weight: 500
+    line-height: 2.7rem
+    
+    +md
+      margin-bottom: 1rem
+
+      font-size: 1.4rem
+
+    +sm
+      margin-bottom: 1.6rem
+
+      font-size: 1.6rem
+
+      br
+        display: none
+  
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: center
+    align-items: center
+
+    +sm
+      flex-direction: column
+      align-items: center
+
+    &__item
+      position: relative
+
+      margin-right: 2em
+      padding: 1.4rem 2rem
+      background-color: $crimson
+
+      font-size: 2.2rem
+      font-weight: 500
+      line-height: 1.2
+      text-transform: uppercase
+      letter-spacing: 0.22rem
+
+      &:last-child
+        margin-right: 0
+
+        &::after
+          display: none
+
+      &::after
+        content: '/'
+        position: absolute
+        right: -1.25em
+        top:   50%
+        transform: translate(0, -50%)
+
+        +sm
+          display: none
+      
+      +lg
+        font-size: 1.6rem
+
+      +md
+        padding: 1rem 1.6rem
+
+        font-size: 1.2rem
+        letter-spacing: normal
+      
+      +sm
+        margin-right: 0
+        margin-bottom: 1.5rem
+
+        font-size: 1.4rem
+
+        &:last-child
+          margin-bottom: 0
+      
+      &:last-child
+        margin-bottom: 0

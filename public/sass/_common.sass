@@ -1,0 +1,241 @@
+::selection
+  background: #face5b
+
+img
+  user-select: none
+  pointer-events: none
+  
+.section
+  padding: 8.5rem 0
+
+  +xl
+    padding: 6.5rem 0
+  
+  +lg
+    // padding: 8.5rem 0
+
+  +md
+    padding: 4rem 0
+
+  +sm
+    padding: 6rem 0
+  
+  &__suptitle
+    margin-top: 0
+    margin-bottom: 3.4rem
+
+    font-size: 2.5rem
+    font-weight: 400
+
+    +xl
+      margin-bottom: 3rem
+
+  &__title
+    margin: 0
+    margin-bottom: 5.2rem
+
+    font-size: 3.4rem
+    font-weight: 700
+    line-height: 1.1
+    text-align: center
+
+    +xl
+      margin-bottom: 3.4rem
+    
+    +lg
+      font-size: 2.8rem
+    
+    +md
+      font-size: 2.2rem
+    
+    +sm
+      width: 100%
+
+      font-size: 1.8rem
+      line-height: 1.2
+    
+    +xs
+      font-size: 1.6rem
+
+  &__description
+    margin: 0
+
+    font-size: 2.2rem
+    line-height: 3.6rem
+
+    +xl
+      font-size: 1.6rem
+      line-height: 3rem
+    
+    +lg
+      font-size: 1.2rem
+      line-height: 2.4rem
+    
+    +sm
+      font-family: "Stolzl Book"
+      font-size: 1.1
+      font-weight: 300
+      letter-spacing: 0.052rem
+      line-height: 1.8rem
+
+  &-footer
+    visibility: hidden
+
+    display: block
+    margin-top: 7rem
+
+    text-align: center
+
+    +xl
+      margin-top: 3rem
+
+    +lg
+      margin-top: 4rem
+
+    &__btn
+      display: inline-flex
+      flex-direction: column
+      align-items: center
+
+      font-size: 3.3rem
+      font-weight: 700
+
+      +md
+        font-size: 2.2rem
+      
+      +sm
+        font-size: 1.8rem
+      
+    &__img
+      display: inline-block
+      height: 4.3rem
+      margin-top: 2rem
+
+      animation-name: jump
+      animation-duration: 2s
+      animation-timing-function: ease-in-out
+      animation-iteration-count: infinite
+
+      will-change: transform
+
+      +lg
+        margin-top: 1.5rem
+
+      +md
+        height: 2.4rem
+
+      +sm
+        margin-top: 1.5rem
+        height: 1.3rem
+
+.btn
+  background: none
+  padding: 2.6rem
+  border: .5rem solid currentColor
+
+  color: #fff
+  font-size: 1.9rem
+  line-height: 1.125rem
+  font-weight: 500
+  letter-spacing: 0.15rem
+  text-transform: uppercase
+
+  cursor: pointer
+  transition: .3s ease
+
+  &--animated
+    transition: transform 0.2s ease-in-out
+    will-change: transform
+
+    &:hover
+      transform: translateY(-0.3rem)
+  
+  +sm
+    // padding: 1.6rem 2.8rem
+    border-width: .2rem
+
+._1920-only,
+.xl-only,
+.lg-only,
+.md-only,
+.sm-only,
+.xs-only
+  display: none
+
+._1920-only
+
+  +_1920-only
+    display: block
+
+.xl-only
+
+  +xl-only
+    display: block
+  
+.lg-only
+
+  +lg-only
+    display: block
+
+.md-only
+
+  +md-only
+    display: block
+
+.sm-only
+
+  +sm-only
+    display: block
+
+.xs-only
+
+  +xs-only
+    display: block
+
+.br-mobile
+  display: none
+
+  +sm
+    display: block
+
+
+// ##########
+// Animations
+// ##########
+@keyframes jump
+  0%
+    transform: translateY(-.35em)
+
+  50%
+    transform: translateY(.35em)
+  
+  100%
+    transform: translateY(-.35em)
+
+@keyframes ship-attacking
+  0%
+    transform: translateX(0)
+
+  25%
+    transform: translateX(-9rem)
+    
+  50%
+    transform: translateX(4rem)
+
+  75%
+    transform: translateX(9rem)
+
+@keyframes ship-attacking-mobile
+  0%
+    transform: translateX(0)
+ 
+  50%
+    transform: translateX(-5rem)
+
+@keyframes dashline
+  0%
+    stroke-dashoffset: 0
+
+  100%
+    stroke-dashoffset: 1.5em
+  

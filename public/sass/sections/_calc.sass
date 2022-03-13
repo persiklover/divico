@@ -1,0 +1,194 @@
+.calc
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: space-between
+  align-content: space-around
+
+  height: 46rem
+
+  +lg
+    height: 35rem
+
+  +md
+    align-content: space-between
+  
+  +sm
+    flex-wrap: nowrap
+    height: auto
+    align-items: center
+
+  &-result
+    align-self: flex-start
+    padding-left: 19rem
+
+    font-size: 2.5rem
+    line-height: 1.6
+    font-weight: 500
+    text-align: left
+
+    +xl
+      padding-left: 0
+      font-size: 2.2rem
+    
+    +lg
+      font-size: 1.6rem
+    
+    +md
+      font-size: 1.4rem
+    
+    +sm
+      margin: 0 auto
+      max-width: 30rem
+
+      font-size: 1.8rem
+
+    &__row
+      margin: 0
+
+      +sm
+        margin-bottom: 1.5rem
+
+        &:last-of-type
+          margin-bottom: 0
+
+    &__num
+      color: $yellow
+    
+    .r
+      font-weight: 700
+
+.select
+  position: relative
+  margin-bottom: 9.5rem
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  font-size: 2.5rem
+
+  +lg
+    font-size: 1.8rem
+
+  +md
+    font-size: 1.7rem
+
+  +sm
+    max-width: 32rem
+    margin-bottom: 3.5rem
+
+    font-size: 1.6rem
+
+  +xs
+    width: 100%
+
+    font-size: 1.4rem
+
+  &--range
+    align-items: stretch
+    margin-bottom: 2rem
+
+    +sm
+      margin-bottom: 7.5rem
+
+    .range-wrap
+      margin-left: 1.5em
+
+      +sm
+        margin-top: 0
+
+  &:nth-child(2n)
+    margin-bottom: 0
+
+    +sm
+      margin-bottom: 3.5rem
+
+  &__title
+    position: relative
+    display: inline-block
+    margin: 0
+    margin-bottom: 3rem
+    padding-left: 1.5em
+
+    font-size: inherit
+    color: #face5b
+    font-weight: 500
+
+    +lg
+      padding-left: 2em
+      margin-bottom: 1.5rem
+    
+    +md
+      margin-bottom: 1rem
+    
+    +sm
+      padding-left: 1.2em
+    
+    +xs
+      padding-left: 1.5em
+
+    &--o
+      color: white
+  
+  label
+    margin-bottom: 3rem
+
+    cursor: pointer
+
+    +lg
+      margin-bottom: 1.5rem
+    
+    +md
+      margin-bottom: 1rem
+
+    &:last-of-type
+      margin-bottom: 0
+    
+  input[type="radio"]
+    display: none
+
+    & + span
+      display: flex
+      align-items: center
+
+      &::before
+        content: ''
+        display: block
+        width:  2.3rem
+        height: 2.3rem
+        border: .5rem solid $yellow
+        margin-right: 1.5rem
+
+        +sm
+          width:  1.3rem
+          height: 1.3rem
+          border-width: .2rem
+          margin-right: .8rem
+    
+    &:checked + span::before
+      background-color: $yellow
+
+.decor-1,
+.decor-2
+  position: absolute
+
+  +lg
+    height: 3rem
+  
+  +sm
+    height: 2rem
+
+.decor-1
+  left:   100%
+  bottom: 0
+  transform: translate(2rem, 0)
+
+.decor-2
+  right: 100%
+  bottom: 0
+  transform: translate(-2rem, 0)
+
+  +sm
+    right: auto
+    left: 100%
+    // transform: translate(2rem, 0)

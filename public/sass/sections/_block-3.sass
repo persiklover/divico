@@ -1,0 +1,222 @@
+.block-3
+  background-color: #373039
+  
+  &__calc
+    margin-top: 7rem
+
+    +xl
+      margin-top: 6rem
+    
+    +lg
+      margin-top: 5rem
+
+    +sm
+      margin-top: 2rem
+
+  &__footer
+    visibility: visible
+    margin-top: 7.5rem
+    display: flex
+    flex-direction: column
+
+    +xl
+      margin-top: 9rem
+
+      flex-direction: row
+      align-items: center
+    
+    +sm
+      margin-top: 1.5rem
+
+      flex-direction: column
+      align-items: center
+    
+    &-bottom
+      margin-top: 4.5rem
+
+      display: flex
+      justify-content: center
+      align-items: baseline
+
+      color: $yellow
+
+      +xl
+        margin-top: 0
+        margin-left: 4rem
+    
+      +md
+        margin-left: 2rem
+
+      +sm
+        margin-top: 3rem
+
+        flex-direction: column
+        align-items: center
+
+    &-modal
+      margin-right: 6.5rem
+
+      color: $yellow
+      font-size: 3.3rem
+      font-weight: 700
+      text-transform: none
+
+      +xl
+        margin-right: 3.5rem
+        padding: 1.3rem
+
+        font-size: 2.5rem
+        line-height: 1.3
+        letter-spacing: normal
+      
+      +lg
+        font-size: 1.8rem
+      
+      +md
+        margin-right: 2rem
+        padding: 1.3rem 1rem
+
+        font-size: 1.4rem
+  
+      +sm
+        margin: 0
+        margin-bottom: 2.5rem
+
+        font-size: 1.8rem
+
+    &-btn
+      visibility: hidden
+
+      +xl
+        font-size: 2.5rem
+        line-height: 1.3
+
+        img
+          height: 2.4rem
+      
+      +lg
+        font-size: 1.8rem
+
+        img
+          height: 2rem
+      
+      +md
+        font-size: 1.4rem
+
+      +sm
+        font-size: 1.8rem
+
+        img
+          height: 1.3rem
+      
+.range
+  -webkit-appearance: none
+  background: transparent
+  width: 100%
+
+  &-wrap
+    position: relative
+    margin-top: 2.5rem
+
+    height: 4rem
+    display: flex
+    align-items: center
+  
+  &__min,
+  &__max,
+  &__current-value
+    position: absolute
+    top: 100%
+
+    font-size: 1.6rem
+    font-weight: 400
+
+    +xs
+      font-size: 1.3rem
+
+  &__min
+    left: 0
+
+  &__max
+    right: 0
+  
+  &__current-value
+    bottom: auto
+    top: 100%
+    left: 50%
+    transform: translate(-50%, 1rem)
+
+    font-size: 2.3rem
+
+    +xs
+      font-size: 2rem
+      transform: translate(-50%, .5rem)
+
+  // Chrome
+  &::-webkit-slider-thumb
+    -webkit-appearance: none
+    border: none
+    height: 3rem
+    width:  .7rem
+    border-radius: 0
+    background: $yellow
+
+    margin-top: -(3rem / 2) + (.6rem / 2)
+
+    cursor: pointer
+
+  // Firefox
+  &::-moz-range-thumb
+    border: none
+    height: 3rem
+    width:  .7rem
+    border-radius: 0
+    background: $yellow
+
+    margin-top: -(3rem / 2) + (.6rem / 2)
+
+    cursor: pointer
+
+  // IE
+  &::-ms-thumb
+    border: none
+    height: 3rem
+    width:  .7rem
+    border-radius: 0
+    background: $yellow
+
+    margin-top: -(3rem / 2) + (.6rem / 2)
+
+    cursor: pointer
+
+
+  // Track
+  &::-webkit-slider-runnable-track
+    width: 100%
+    height: .6rem
+    background: $yellow
+    border-radius: 0
+    border: none
+
+    cursor: pointer
+  
+  &::-moz-range-track
+    width: 100%
+    height: .6rem
+    background: $yellow
+    border-radius: 0
+    border: none
+
+    cursor: pointer
+
+  &::-ms-track
+    width: 100%
+    height: .6rem
+    background: $yellow
+    border-radius: 0
+    border: none
+
+    cursor: pointer
+  
+  &:focus
+    outline: none

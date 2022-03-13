@@ -1,0 +1,173 @@
+.block-1
+  position: relative
+  z-index: 1
+  overflow: hidden
+  padding-top: 5.2rem
+  background: #191f25 url("../img/stars.png") no-repeat center top / contain
+
+  +md
+    padding-top: 4rem
+    background-image: none
+
+  +sm
+    padding-top: 5rem
+
+  &__wrap
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    +sm
+      justify-content: flex-start
+
+  &__title
+    visibility: hidden
+
+    font-weight: 500
+
+  &__scrolldown
+    visibility: hidden
+
+    margin-top: 8rem
+
+    color: #fff
+    font-size: 5rem
+    font-weight: 700
+
+    &:hover
+      svg line
+        // stroke-dashoffset: 1.5em
+
+        animation-name: dashline
+        animation-duration: .5s
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+
+    +xl
+      margin-top: 2.5rem
+    
+    +lg
+      font-size: 3.8rem
+    
+    +md
+      font-size: 3.1rem
+    
+    +sm
+      margin-top: 9.5rem
+      font-size: 2rem
+    
+    +xs
+      font-size: 1.7rem
+      margin-top: 3rem
+
+    .marked
+      color: #face5b
+    
+    strong
+      position: relative
+      display: block
+
+      svg,
+      svg line
+        position: absolute
+        left:   0
+        bottom: -2rem
+        width: 100%
+        height: .2em
+        
+        fill: transparent
+
+        +sm
+          bottom: -.8rem
+          height: .4rem
+      
+      svg line
+        stroke: #face5b
+        stroke-width: 2em
+        // stroke-dasharray: 50,20
+        stroke-dasharray: 1em, .5em
+
+        transition: all .3s ease-in
+        
+    img
+      margin-top: 6rem
+
+      +lg
+        margin-top: 5rem
+        height: 3.5rem
+
+      +md
+        margin-top: 4.5rem
+      
+      +sm
+        margin-top: 3rem
+        height: 1.3rem
+
+  &__decor
+    position: absolute
+    z-index: -1
+    left: 50%
+    top:  48%
+    transform: translate(-50%, -50%)
+
+    +lg
+      top: 41%
+    
+    +sm
+      display: none
+
+  &__img1
+    margin-top:   -3.6rem
+    margin-bottom: 6rem
+    margin-left:  -7.2rem
+
+    +xl
+      margin-top: -5.6rem
+      margin-bottom: 4rem
+    
+    +lg
+      margin-top: -17.5rem
+      margin-bottom: 6rem
+    
+    +md
+      width: 70rem
+      margin-top: -13.5rem
+      margin-left: -5rem
+    
+    +sm
+      width: 46rem
+      margin-top: -5.5rem
+      margin-left: -3.5rem
+    
+    +xs
+      width: 38rem
+      margin-top: -4.5rem
+  
+  &__img2
+    margin-top: 4.5rem
+
+    animation-name: ship-attacking
+    animation-duration: 3.5s
+    animation-timing-function: ease-in-out
+    animation-iteration-count: infinite
+
+    will-change: transform
+
+    +xl
+      margin-top: 0
+    
+    +md
+      width: 70rem
+    
+    +sm
+      width: 47rem
+      margin-top: 2rem
+
+      animation-name: ship-attacking-mobile
+      animation-duration: 2s
+    
+    +xs
+      width: 40rem
